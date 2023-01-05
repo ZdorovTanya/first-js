@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="libs/bootstrep-grid.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="./css/contactstyle.css"> 
+    <script src="./js/jscontact.js"></script>
+    <link type="image/x-icon" href="./img/men.png" rel="icon">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">@zdorov_tanya</a>
+            
+            <div class="navbar-wrap">
+                <ul class="navbar-menu">
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./call.html">Обо мне</a></li>
+                    <li><a href="./interest.html">Мои интересы</a></li>
+                    <li><a href="./study.html">Учеба</a></li>
+                    <li><a href="./foto.html">Фотоальбом</a></li>
+                    <li><a href="./test.html">Тест</a></li>
+                    <li><a href="./contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <h1>Контакты</h1><br>
+        
+    <form name = "contact_form" method="post" onsubmit = "return validate_form();" action="mailto:zdorovilo.tanya@mail.ru">
+
+        <p>
+            <label for="Username">Фамилия Имя Отчество:</label>
+            <input id="Username" type="text" placeholder="Введите ФИО"  name = "contact_name">
+        </p><br>
+
+        <p>
+            <label for="phone">Номер телефона:</label>
+            <input id="phone" type="tel" placeholder="+70000000000" name="phone_num">
+        </p><br>
+
+        <label for="bday">Дата рождения:</label>
+
+        <input type="date" id="bday" name="daybirn"
+               min="1800-01-01" max="2090-12-31">
+        <br><br>
+
+        <p>
+            <label for="UserEmail">Email:</label>
+            <input id="UserEmail" type="email" name = "email_name" placeholder="Введите почту">
+        </p>
+        <br>
+
+            <h3>Укажите пол:</h3>
+
+            <p>
+                <label for="w"> <input type="radio" id="w" name="pol">Женский</label>
+            </p>
+
+            <p>
+                <label for="m"><input type="radio" id="m" name="pol">Мужской</label>
+            </p>
+
+        <br>
+
+            <h3>Окно ввода сообщения:</h3>
+
+            <textarea name="comment" cols="40" rows="3"></textarea>
+
+        <br>
+        <input type="submit">
+        <input type="reset">
+
+    </form> 
+
+</body>
+</html>
